@@ -59,14 +59,19 @@ Rules:
 
 As of 2026-05-28:
 
-- The project is a local Git repository.
-- No GitHub remote is connected yet.
+- The project is connected to GitHub: https://github.com/tyno931128/brand-ops-homepage
+- `main` contains the merged interactive portfolio work from PR #4.
 - `.vercel/project.json` is not present, so this workspace is not linked to a Vercel project yet.
+- The connected Vercel account currently does not have a `brand-ops-homepage` project.
+- The local shell does not currently expose `vercel`, `npm`, `npx`, or `pnpm`, so CLI deployment cannot be completed from this workspace yet.
 - The current contact CTA still uses the placeholder email `hello@example.com`.
 - Production metadata does not yet include a canonical production URL or OG image URL.
 
-Do not deploy publicly until the placeholder contact details and production URL
-are confirmed.
+Next deployment path:
+
+1. Import `tyno931128/brand-ops-homepage` from the Vercel dashboard, or install/login to Vercel CLI and run `vercel --prod`.
+2. Replace `hello@example.com` with a real contact route before production launch.
+3. Add the production URL to metadata canonical and OG values after the Vercel URL is known.
 
 ## Public Template Use
 
