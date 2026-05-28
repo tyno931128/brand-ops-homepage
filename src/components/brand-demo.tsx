@@ -10,7 +10,7 @@ const demoProfiles = [
     brand: "필라테스 스튜디오",
     firstLine: "체형 고민이 있는 직장인이 바로 이해할 한 줄 메시지",
     leadSignal: "인스타는 있는데 가격·후기·체험 예약이 흩어져 있음",
-    nextAction: "체험수업 CTA와 가격표, 후기, FAQ를 첫 화면에 배치",
+    nextAction: "체험수업 버튼과 가격표, 후기, FAQ를 첫 화면에 배치",
     loop: ["체험", "가격", "후기", "예약"],
   },
   {
@@ -25,7 +25,7 @@ const demoProfiles = [
     label: "학원",
     brand: "영어 학원",
     firstLine: "학부모가 비교할 커리큘럼과 상담 이유",
-    leadSignal: "블로그 글은 있지만 수업 과정·성과·상담 CTA가 분리됨",
+    leadSignal: "블로그 글은 있지만 수업 과정·성과·상담 버튼이 분리됨",
     nextAction: "레벨테스트, 커리큘럼, 후기, 상담 신청을 첫 화면에 연결",
     loop: ["과정", "성과", "후기", "상담"],
   },
@@ -34,7 +34,7 @@ const demoProfiles = [
     brand: "브랜딩 코치",
     firstLine: "왜 이 사람에게 맡겨야 하는지 설명하는 소개 문장",
     leadSignal: "콘텐츠는 쌓였지만 서비스와 상담 방식이 명확하지 않음",
-    nextAction: "전문성 증거, 패키지, 상담 CTA를 한 페이지로 압축",
+    nextAction: "전문성 증거, 패키지, 상담 버튼을 한 페이지로 압축",
     loop: ["소개", "증거", "상품", "상담"],
   },
 ];
@@ -88,7 +88,7 @@ export function BrandDemo() {
         <div className="demo-device mx-auto max-w-[430px] rounded-t-[36px] border-[10px] border-[#111827] bg-[#f8fafc] p-4 shadow-[0_28px_70px_rgba(15,23,42,0.28)]">
           <div className="mb-4 flex items-center justify-between rounded-2xl bg-white px-4 py-3 shadow-sm">
             <div>
-              <p className="text-xs font-semibold text-stone-400">AI 진단 결과</p>
+              <p className="text-xs font-semibold text-stone-400">진단 메모</p>
               <h3 className="mt-1 text-lg font-bold text-[#111827]">{normalizedBrand}</h3>
             </div>
             <div className="grid h-11 w-11 place-items-center rounded-2xl bg-[#efeefe] text-[#5a55ff]">
@@ -105,13 +105,13 @@ export function BrandDemo() {
             />
             <DemoRow
               icon={<Search className="h-4 w-4" />}
-              title="리드 신호"
+              title="막히는 지점"
               copy={currentProfile.leadSignal}
               tone="blue"
             />
             <DemoRow
               icon={<CheckCircle2 className="h-4 w-4" />}
-              title="다음 액션"
+              title="다음 수정"
               copy={currentProfile.nextAction}
               tone="green"
             />
