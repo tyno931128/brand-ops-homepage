@@ -446,6 +446,14 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+            <div className="mt-5 flex flex-wrap gap-4 text-sm font-bold text-[#5a55ff]">
+              <Link href="/projects" className="transition hover:text-[#17191f]">
+                만든 사이트 보기
+              </Link>
+              <Link href="/studio" className="transition hover:text-[#17191f]">
+                3D 포트폴리오 체험
+              </Link>
+            </div>
           </div>
           <BrandDemo />
         </div>
