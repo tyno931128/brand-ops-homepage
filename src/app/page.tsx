@@ -18,6 +18,7 @@ import {
   Target,
   TrendingUp,
 } from "lucide-react";
+import Link from "next/link";
 import type { CSSProperties } from "react";
 import { BrandDemo } from "@/components/brand-demo";
 import { HeroScene } from "@/components/hero-scene";
@@ -381,6 +382,12 @@ export default function Home() {
             <a href="#screens" className="transition hover:text-[#17191f]">
               운영 화면
             </a>
+            <Link href="/projects" className="transition hover:text-[#17191f]">
+              작업물
+            </Link>
+            <Link href="/studio" className="transition hover:text-[#17191f]">
+              3D 데모
+            </Link>
             <a href="#packages" className="transition hover:text-[#17191f]">
               패키지
             </a>
@@ -469,8 +476,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-3xl text-lg leading-8 text-stone-600">
-              기능이 복잡한 IT 프로젝트보다, 신뢰와 예약 흐름만 정리해도 매출에 가까워지는
-              소규모 서비스 사업을 먼저 공략합니다.
+              처음 보는 고객이 가격, 후기, 과정, 예약 방법을 빠르게 이해해야 하는 사업을
+              위해 소개와 문의 흐름을 한 페이지로 정리합니다.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
